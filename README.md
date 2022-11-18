@@ -13,7 +13,16 @@ View a demo of the app:
 ## Purpose
 I made this project to further improve my skills of React logic building
 
-To learn more about Next.js, take a look at the following resources:
+
+## Installation
+
+If you wish to run this app locally, clone this repo and install the dependencies.
+
+```
+$ git clone https://github.com/Ukhang/Number-converter.git
+$ cd number-converter
+$ npm install
+```
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
