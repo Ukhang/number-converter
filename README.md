@@ -4,7 +4,7 @@ This is a number converter web app built using React, Nextjs, and Tailwindcss. T
 
 This app is deployed with Vercel and can be accessed here: [numberconverter.vercel.app](https://numberconverter.vercel.app). I hope you have fun playing around with it.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![vercel-building](https://user-images.githubusercontent.com/94834060/202710082-c4561c0b-da58-4a0b-9e48-a695d92aaf82.png)
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
