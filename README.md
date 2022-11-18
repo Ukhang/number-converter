@@ -10,9 +10,8 @@ View a demo of the app:
 
 ![pg](https://user-images.githubusercontent.com/94834060/202711585-3325061a-46d1-47a0-985c-fa7d0b715077.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
+## Purpose
+I made this project to further improve my skills of React logic building
 
 To learn more about Next.js, take a look at the following resources:
 
