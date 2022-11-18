@@ -27,3 +27,6 @@ $ npm install
 ## App Design
 #### Light 🌞 |  Dark 🌙
 ![prg](https://user-images.githubusercontent.com/94834060/202715850-ddfaf13f-2f7f-43ce-956a-016d03dab11f.PNG)
+
+## License
+Number converter is releashed under the [MIT License](https://choosealicense.com/licenses/mit/)
