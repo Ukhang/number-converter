@@ -8,7 +8,7 @@ This app is deployed with Vercel and can be accessed here: [numberconverter.verc
 
 View a demo of the app:
 
-![project](https://user-images.githubusercontent.com/94834060/202710863-361b62ec-5743-43c2-891e-38723d2fe332.PNG)
+![pg](https://user-images.githubusercontent.com/94834060/202711585-3325061a-46d1-47a0-985c-fa7d0b715077.png)
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
