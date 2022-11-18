@@ -2,8 +2,7 @@
 
 This is a number converter web app built using React, Nextjs, and Tailwindcss. This app will help you to convert numbers like Decimal to Binary, Binary to Decimal etc.
 
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app is deployed with Vercel and can be accessed here: [numberconverter.vercel.app](https://numberconverter.vercel.app). I hope you have fun playing around with it.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
