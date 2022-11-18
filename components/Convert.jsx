@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GoTriangleDown } from "react-icons/go";
-import { MdSwapHoriz, MdOutlineFileCopy } from "react-icons/md";
+import { MdOutlineFileCopy } from "react-icons/md";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Convert = () => {
 
@@ -167,7 +168,7 @@ const Convert = () => {
     }
 
     return (
-        <section className="lg:max-w-3xl md:max-w-2xl mx-auto mt-20 grid md:grid-cols-2 gap-x-16 relative mb-20 md:px-0 px-4">
+        <section className="lg:max-w-3xl md:max-w-2xl mx-auto mt-20 grid md:grid-cols-2 gap-x-14 relative mb-20 md:px-0 px-4">
             {/* ====== Left ======= */}
             <div>
                 <div className={`border border-[#D2D5DF] dark:border-[#616465] flex justify-between items-center px-4 py-1.5 rounded-xl cursor-pointer text-[#423E3E] dark:text-[#E2E3E4] hover:bg-gray-100 dark:hover:bg-[#202024] relative text-lg ${inputDropdown == true ? "bg-gray-100 dark:bg-[#202024]" : ""}`} onClick={() => setInputDropdown(!inputDropdown)}>
@@ -230,13 +231,6 @@ const Convert = () => {
                 </button>
             </div>
 
-            {/* ======== Middle (Swap Button) ========= */}
-            <div className="absolute flex items-center justify-center md:top-3 top-[20rem] left-[50%] right-[50%]">
-                <span className="text-xl text-gray-400 dark:text-gray-500 hover:text-[#423E3E] hover:dark:text-[#D2D5DF] cursor-pointer">
-                    <MdSwapHoriz/>
-                </span>
-            </div>
-
             {/* ====== Right ======= */}
             <div className="md:mt-0 mt-10">
                 <div className={`border border-[#D2D5DF] dark:border-[#616465] flex justify-between items-center px-4 py-1.5 rounded-xl cursor-pointer text-[#423E3E] dark:text-[#E2E3E4] hover:bg-gray-100 dark:hover:bg-[#202024] relative text-lg ${outputDropdown == true ? "bg-gray-100 dark:bg-[#202024]" : ""}`} onClick={() => setOutputDropdown(!outputDropdown)}>
@@ -290,7 +284,9 @@ const Convert = () => {
                         value={number.output}
                         onChange={handleChange}
                     />
-                    <MdOutlineFileCopy className="absolute bottom-3 left-5 text-[#AAADBA] cursor-pointer hover:text-[#423E3E]"/>
+                    <CopyToClipboard text={number.output}>
+                        <MdOutlineFileCopy className="absolute bottom-3 left-5 text-[#AAADBA] cursor-pointer hover:text-[#423E3E]"/>
+                    </CopyToClipboard>
                 </div>
             </div>
         </section>
