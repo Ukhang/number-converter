@@ -6,7 +6,9 @@ This app is deployed with Vercel and can be accessed here: [numberconverter.verc
 
 ![vercel-building](https://user-images.githubusercontent.com/94834060/202710082-c4561c0b-da58-4a0b-9e48-a695d92aaf82.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+View a demo of the app:
+
+![project](https://user-images.githubusercontent.com/94834060/202710863-361b62ec-5743-43c2-891e-38723d2fe332.PNG)
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
