@@ -1,51 +1,63 @@
-import React from 'react';
-import Head from 'next/head';
-import Navbar from '../components/Navbar';
-import Bannersrc from '../components/Bannersrc';
-import Shop from '../components/Shop';
-import Beauty from '../components/Beauty';
-import Sales from '../components/Sales';
-import Journal from '../components/Journal';
-import Footer from '../components/Footer';
+import Image from "next/image";
+import HeadTag from "../components/HeadTag"
+import { motion } from "framer-motion";
+import Header from "../components/Header";
+import Convert from "../components/Convert";
+import Footer from "../components/Footer";
+
+// Image
+import chathuman from "../public/images/chathuman.svg";
+import chatrobot from "../public/images/chatrobot.svg";
+import computer from "../public/images/computer.png";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* =================== Head Tag ====================== */}
-      <Head>
-        <title>Opentic - Fashion</title>
-        <meta name="description" content=""/>
-        <meta name="keywords" content=""/>
-        <meta name="author" content=""/>
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
+    <div className="bg-[#F6F8FF] dark:bg-[#26272b]">
+      <div className="min-h-screen flex flex-col max-w-5xl mx-auto">
+        {/* ======== Head Tag ====== */}
+        <HeadTag/>
 
-      {/* ================== Header ======================== */}
-      <header>
-        {/* =============== Navbar ==================== */}
-        <Navbar/>
-      </header>
+        {/* ======== Header ======= */}
+        <Header/>
 
-      {/* ===================== Main ======================== */}
-      <main>
-        {/* ============== Banner Section ================= */}
-        <Bannersrc/>
+        {/* ====== Main ======== */}
+        <main>
+          {/* ========= Chat Section ============ */}
+          <section className="lg:max-w-3xl md:max-w-2xl mx-auto flex justify-between items-start mt-16">
+            {/* ===== left chat ====== */}
+            <motion.div
+              initial={{y:"50%", opacity: 0 }}
+              animate={{y:0, opacity: 1}}
+              transition={{delayChildren: 0.3, staggerChildren: 0.2, type: "spring"}}
+            >
+              <Image src={chathuman} alt="human-chat image" className="w-auto" />
+            </motion.div>
+            
+            {/* ===== right chat ====== */}
+            <motion.div
+              initial={{y:"50%", opacity: 0 }}
+              animate={{y:0, opacity: 1}}
+              transition={{delay: 0.3, type: "spring", stiffness: 100}}
+              className="mt-14"
+            >
+              <Image src={chatrobot} alt="robot-chat image" className="w-auto" />
+            </motion.div>
+          </section>
 
-        {/* ============== Shop Section ================= */}
-        <Shop/>
+          {/* ======= Pc Section ======== */}
+          <section className="flex items-center justify-center">
+            <div className="md:mt-[-5rem] mt-[-2rem]">
+              <Image src={computer} alt="computer image" width={450} height={350}/> 
+            </div>
+          </section>
 
-        {/* ============== Beauty Section ================= */}
-        <Beauty/>
+          {/* ===== Convert section ===== */}
+          <Convert/>
+        </main>
 
-        {/* ============== Sales Section ================= */}
-        <Sales/>
-
-        {/* ============== Journal Section ================= */}
-        <Journal/>
-      </main>
-
-      {/* ============== Footer ================= */}
-      <Footer/>
+        {/* =============== Footer ============= */}
+        <Footer/>
+      </div>
     </div>
   )
 }
