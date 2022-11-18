@@ -1,12 +1,7 @@
 ## Number Converter
 
-This is a 
+This is a number converter web app built using React, Nextjs, and Tailwindcss. This app will help you to convert numbers like Decimal to Binary, Binary to Decimal etc.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
