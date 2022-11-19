@@ -18,10 +18,24 @@ I made this project to further improve my skills of React logic building
 
 If you wish to run this app locally, clone this repo and install the dependencies.
 
-```
+1. Clone this repository:
+```bash
 $ git clone https://github.com/Ukhang/Number-converter.git
+```
+
+2. Go into clone directory
+```bash
 $ cd number-converter
-$ npm install
+```
+
+3. install dependencies and devDependencies:
+```bash
+npm intall
+```
+
+4. Run your development server:
+```bash
+npm run dev
 ```
 
 ## App Design
