@@ -21,7 +21,10 @@ const Convert = () => {
     }
 
     // ========= button onlick handle ==============
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+
+        e.preventDefault();
+
         // Check decimal to decimal
         if(inputDropval == "🪀 Decimal" && outputDropval == "🪀 Decimal") {
             let inp = Number(number.input);
@@ -209,26 +212,27 @@ const Convert = () => {
                     </ul>
                 </div>
 
-                {/* ======== Input ======== */}
-                <div className="mt-2.5">
-                    <textarea 
-                        name="input" 
-                        id="input"
-                        rows="6" 
-                        className="flex flex-grow w-full rounded-xl py-4 px-4 text-xl resize-none bg-[#ffffff] dark:bg-[#393A3F] outline-none focus:outline-[#a8d0e6]"
-                        placeholder="Enter Number"
-                        onChange={handleChange}
-                    />
-                </div>
+                <form onSubmit={handleSubmit}>
+                    {/* ======== Input ======== */}
+                    <div className="mt-2.5">
+                        <textarea 
+                            name="input" 
+                            id="input"
+                            rows="6" 
+                            className="flex flex-grow w-full rounded-xl py-4 px-4 text-xl resize-none bg-[#ffffff] dark:bg-[#393A3F] outline-none focus:outline-[#a8d0e6]"
+                            placeholder="Enter Number"
+                            onChange={handleChange}
+                        />
+                    </div>
 
-                {/* ========== Submit Button ========= */}
-                <button
-                    type="submit"
-                    className="py-2 px-5 bg-[#BAE6FD] text-lg text-[#423E3E] font-[600] rounded-xl border-b-[6px] border-[#655F5F] mt-4 hover:border-b-4 hover:bg-[#b3dcf3]"
-                    onClick={handleSubmit}
-                >
-                    convert
-                </button>
+                    {/* ========== Submit Button ========= */}
+                    <button
+                        type="submit"
+                        className="py-2 px-5 bg-[#BAE6FD] text-lg text-[#423E3E] font-[600] rounded-xl border-b-[6px] border-[#655F5F] mt-4 hover:border-b-4 hover:bg-[#b3dcf3]"
+                    >
+                        convert
+                    </button>
+                </form>
             </div>
 
             {/* ====== Right ======= */}
