@@ -14,9 +14,5 @@ View a demo of the app:
 I made this project to further improve my skills of React logic building
 
 
-## App Design
-#### Light 🌞 |  Dark 🌙
-![prg](https://user-images.githubusercontent.com/94834060/202715850-ddfaf13f-2f7f-43ce-956a-016d03dab11f.PNG)
-
 ## License
 Number converter is releashed under the [MIT License](https://github.com/Ukhang/Number-converter/blob/main/LICENSE)
