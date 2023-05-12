@@ -1,6 +1,6 @@
 ## Number Converter
 
-This is a number converter web app built using React, Nextjs, and Tailwindcss. This app will help you to convert numbers like Decimal to Binary, Binary to Decimal etc...
+Open source number converter web. It allows you to convert numbers from one numeral system to another, such as Decimal to Binary, Binary to Decimal, and more. 
 
 This app is deployed with Vercel and can be accessed here: [numberconverter.vercel.app](https://numberconverter.vercel.app). I hope you have fun playing around with it.
 
