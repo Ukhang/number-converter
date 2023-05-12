@@ -2,8 +2,6 @@ import { useTheme } from "next-themes";
 import { useState, useEffect, forwardRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-// Image
 import logo from "../public/images/logo.svg";
 
 const Header = forwardRef((props, ref) => {
@@ -43,5 +41,7 @@ const Header = forwardRef((props, ref) => {
     </header>
   );
 });
+
+Header.displayName = "Header";
 
 export default Header;
