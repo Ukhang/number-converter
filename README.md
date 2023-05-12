@@ -11,7 +11,7 @@ View a demo of the app:
 ![pg](https://user-images.githubusercontent.com/94834060/202711585-3325061a-46d1-47a0-985c-fa7d0b715077.png)
 
 ## Purpose
-I made this project to further improve my skills of React logic building
+I made this project to further improve my skills in React logic building.
 
 
 ## License
