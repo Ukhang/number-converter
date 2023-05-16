@@ -13,6 +13,11 @@ View a demo of the app:
 ## Purpose
 I made this project to further improve my skills in React logic building.
 
+## Contributors ✨
+
+<a href="https://github.com/Ukhang/Number-converter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ukhang/Number-converter" />
+</a>
 
 ## License
-Number converter is releashed under the [MIT License](https://github.com/Ukhang/Number-converter/blob/main/LICENSE)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]([https://opensource.org/licenses/MIT](https://github.com/Ukhang/Number-converter/blob/main/LICENSE))
