@@ -11,7 +11,7 @@ View a demo of the app:
 ![pg](https://user-images.githubusercontent.com/94834060/202711585-3325061a-46d1-47a0-985c-fa7d0b715077.png)
 
 ## Purpose
-I made this project to further improve my skills in React logic building.
+This application is designed specifically for students who encounter difficulties when converting numbers. Its purpose is to provide a convenient solution for performing various number conversions. With this app, students can easily convert numbers between different number systems, such as decimal, binary, octal, and hexadecimal.
 
 ## Contributors ✨
 
