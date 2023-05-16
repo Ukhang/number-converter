@@ -21,6 +21,13 @@ const Convert = () => {
     setNumber((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  const handleEnter = (e) => {
+    // check if e is enter key
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const inp = number.input;
@@ -133,6 +140,7 @@ const Convert = () => {
               className="flex flex-grow w-full rounded-xl py-4 px-4 text-xl resize-none bg-[#ffffff] dark:bg-[#393A3F] outline-none focus:outline-[#a8d0e6]"
               placeholder="Enter Number"
               onChange={handleChange}
+              onKeyDown={handleEnter}
             />
           </div>
 
@@ -219,6 +227,7 @@ const Convert = () => {
             disabled
             value={number.output}
             onChange={handleChange}
+            onKeyDown={handleEnter}
           />
           <CopyToClipboard text={number.output}>
             <MdOutlineFileCopy className="absolute bottom-3 left-5 text-[#AAADBA] cursor-pointer hover:text-[#423E3E]" />
