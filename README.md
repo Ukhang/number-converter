@@ -18,11 +18,5 @@ This application is designed specifically for students who encounter difficultie
 
 * User-Friendly Interface: The app is designed with a clean and intuitive interface, ensuring an effortless user experience. Students can easily input numbers, select the desired conversion, and obtain the converted result without any confusion.
 
-## Contributors ✨
-
-<a href="https://github.com/Ukhang/Number-converter/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ukhang/Number-converter" />
-</a>
-
 ## License
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]([https://opensource.org/licenses/MIT](https://github.com/Ukhang/Number-converter/blob/main/LICENSE))
